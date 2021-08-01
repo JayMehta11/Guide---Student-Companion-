@@ -1,0 +1,163 @@
+.student-container {
+  overflow-x: scroll !important;
+  max-width: 100vw !important;
+  row-gap: 0.8rem;
+}
+
+.student-container input {
+  width: 17px;
+  height: 17px;
+  border: 1px solid grey;
+}
+
+.student-container .header {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 0.2px;
+  color: #1132f0;
+  border-radius: 10px;
+}
+
+.student-container .hindrence {
+  display: block;
+  -webkit-transform: translate(-1000px, -1000px) !important;
+          transform: translate(-1000px, -1000px) !important;
+  height: 0 !important;
+  width: 0 !important;
+  z-index: 0 !important;
+  margin: -6px !important;
+}
+
+.student-container .student-details {
+  background-color: white;
+  border-radius: 10px;
+  min-width: 450px !important;
+}
+
+.student-container .student-details .student {
+  background-color: white;
+  border-radius: 10px;
+}
+
+.student-container .student-details .student span {
+  overflow-x: scroll;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.001em;
+  font-family: 'Roboto Slab';
+  color: #404040;
+  border: none;
+  padding: 0rem 0.3rem !important;
+  white-space: nowrap;
+  padding-top: 7px !important;
+  padding-bottom: 7px !important;
+}
+
+.student-container .student-details .student span .fab-button {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  width: 40px;
+  height: 40px;
+  pointer-events: none;
+}
+
+.student-container .student-details .student svg {
+  color: #0d6efd;
+}
+
+.student-container .student-details .student .not_completed {
+  text-transform: capitalize;
+  background-color: #fef6e9;
+  color: #f4a125;
+}
+
+.student-container .student-details .student .not_completed svg {
+  color: #f4a125;
+}
+
+.student-container .student-details .student .completed {
+  text-transform: capitalize;
+  background-color: #eff8f1;
+  color: #2dbc53;
+}
+
+.student-container .student-details .student .completed svg {
+  color: #2dbc53;
+}
+
+.student-container .student-details .student-description p {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: #858585;
+}
+
+.student-container .student-details .student-description h5 {
+  font-size: 16px;
+}
+
+.student-container .student-details .student-description .rating-container {
+  max-height: 350px;
+  overflow-y: scroll;
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: #858585;
+}
+
+.student-container .student-details .student-description .rating-container::-webkit-scrollbar {
+  display: block !important;
+}
+
+.student-container .student-details .student-description div {
+  -webkit-column-gap: 0.7rem;
+          column-gap: 0.7rem;
+  row-gap: 0.7rem;
+}
+
+.student-container .student-details .student-description div .delete-btn {
+  background-color: #FFE2E3 !important;
+  font-family: "Mulish" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-size: 12px;
+  color: #FF0000 !important;
+}
+
+.student-container .student-details .student-description div .delete-btn:hover {
+  background-color: #FFE2E3 !important;
+}
+
+.student-container .student-details .student-description div button {
+  font-family: "Mulish" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-size: 12px;
+}
+
+.operation-dialog {
+  background: rgba(13, 2, 19, 0.25);
+  -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.operation-dialog .dialog-title > h2 {
+  font-family: 'Roboto Slab';
+  font-weight: 800;
+  font-size: 30px;
+}
+
+.operation-dialog input, .operation-dialog label, .operation-dialog Button {
+  font-family: "Roboto Slab";
+}
+/*# sourceMappingURL=student.css.map */

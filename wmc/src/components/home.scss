@@ -1,0 +1,158 @@
+.side-navbar{
+    // background-color: rgba(54, 55, 64, 1);
+    background: linear-gradient(to bottom,#e2e8fa,#9cb3f8,#c2c5fa);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 20.0px );
+    -webkit-backdrop-filter: blur( 20.0px );
+    // border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    img{
+        width: 70%;
+    }
+    a{
+        text-decoration: none;
+    }
+    .side-nav-item{
+        font-family: 'Mulish';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 16px;
+        line-height: 20px;
+        cursor: pointer;
+        letter-spacing: 0.2px;
+        
+        color: white;
+        column-gap: 1.5rem;
+        border-left: 3px solid transparent;
+        svg{
+            margin-top: 1px;
+            width: 16px;
+            height: 16px;
+        }
+        &:hover{
+            background-color: rgba(159, 162, 180, 0.05);
+        }
+    }
+    .active{
+        border-left-color: #231EC7;
+        // background-color: rgba(159, 162, 180, 0.08);
+        color: #231EC7;
+        svg > path{
+            fill: #231EC7;
+        }
+    }
+}
+.main-container{
+    background: #f2f2ff;
+    backdrop-filter: blur( 20.0px );
+    -webkit-backdrop-filter: blur( 20.0px );
+    // border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    min-height: 100vh;
+}
+.appBar{
+    background: #f2f2ff;
+    backdrop-filter: blur( 20.0px );
+    -webkit-backdrop-filter: blur( 20.0px );
+    box-shadow: none !important;
+    padding: 0px !important;
+    width: calc(100% - 255px) !important;
+    margin-left: 255px !important;
+    .collapsable-bars{
+        display: none;
+    }
+
+    @media screen and (max-width: "599px") {
+        width: 100% !important;
+        margin-left: 0px !important;
+        .collapsable-bars{
+            display: block;
+        }
+    }
+}
+.navbar{
+    overflow-x: hidden;
+    background: #f2f2ff;
+    backdrop-filter: blur( 20.0px );
+    -webkit-backdrop-filter: blur( 20.0px );
+    color: black !important;
+
+    h3{
+
+        font-family: 'Roboto Slab';
+        font-style: normal;
+        font-weight: bold;
+        font-variant: small-caps;
+        color: #252733;
+    }
+    .navbar-user-icon{
+        column-gap: 1.3rem;
+    }
+    button{
+        padding: 0px auto !important;
+    }
+    span{
+        cursor: pointer;
+        font-size: 1rem;
+        column-gap: 0.4rem;
+        .avatar{
+            color: white;
+            background-color: #673ab7;
+            transform: scale(0.7);
+        }
+        img{
+            width: 30px;
+            height: 30px;
+        }
+    }
+}
+
+@media screen and (max-width: "450px") {
+    h3{
+        font-size: 1.2rem;
+    }
+    .navbar-user-icon{
+        column-gap: 0.3rem !important;
+    }
+    .navbar{
+        button{
+            transform: scale(0.9);
+            // padding: 0px !important;
+        }
+        span{
+            font-size: 0.7rem;
+            column-gap: 0.3rem;
+            img{
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: "300px") {
+    h3{
+        font-size: 1rem;
+    }
+    .navbar-user-icon{
+        column-gap: 0px !important;
+    }
+    .navbar{
+        button{
+            transform: scale(1);
+            padding: 0px 10px !important;
+        }
+        span{
+            font-size: 0.7rem;
+            column-gap: 0.3rem;
+            img{
+                width: 20px;
+                height: 20px;
+            }
+            .avatar{
+                transform: scale(0.5);
+            }
+            transform: scale(0.8);
+        }
+    }
+}

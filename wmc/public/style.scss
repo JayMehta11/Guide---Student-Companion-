@@ -1,0 +1,97 @@
+*{
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+    &::-webkit-scrollbar{
+        display: none !important;
+    }
+}
+
+body,#root{
+    width: 100vw;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.global-loader{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0,0,0.7);
+    z-index: 5000;
+}
+
+.divider{
+    border-bottom: 2px dashed #BDBDBD;
+}
+
+p,h1,h2,h3{
+    margin: 0;
+    padding: 0;
+}
+
+$color: #1abc9c;
+
+.login-page{
+    width: 100vw;
+    min-height: 100vh;  
+    background-image: url("https://colorlib.com/etc/lf/Login_v4/images/bg-01.jpg");
+    background-size: cover;
+    form{
+      background: rgba( 255, 255, 255, 0.9 );
+      box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+      backdrop-filter: blur( 13.0px );
+      -webkit-backdrop-filter: blur( 13.0px );
+      border-radius: 10px;
+      border: 1px solid rgba( 255, 255, 255, 0.18 );
+    }  
+}
+.no-data-found{
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 600;
+  color: #9FA2B4;
+}
+.register-page{
+    
+  background-image: url("https://colorlib.com/etc/lf/Login_v4/images/bg-01.jpg");
+  background-size: cover;
+  form{
+    background: rgba( 255, 255, 255, 0.9 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 13.0px );
+    -webkit-backdrop-filter: blur( 13.0px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+  }
+  }
+
+.confirm-dialog{
+  
+    .confirm-dialog-title{
+      font-family: 'Mulish';
+      font-weight: bold;
+      font-style: normal;
+      font-size: 24px;
+      line-height: 30px;
+      letter-spacing: 0.3px;
+      color: #252733;
+      column-gap: 0.7rem;
+      .confirm-dialog-title-icon{
+        background: rgba(245, 54, 54, 0.3) !important;
+        svg{
+          fill: #F53636 !important;
+        }
+      }
+    }
+  
+    .confirm-content{
+      font-family: 'Mulish';
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 30px;
+      letter-spacing: 0.4px;
+      color: #9FA2B4 !important;
+    }
+  
+  }
